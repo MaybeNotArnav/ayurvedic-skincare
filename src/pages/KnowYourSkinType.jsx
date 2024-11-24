@@ -19,6 +19,25 @@ const KnowYourSkinType = () => {
     }, 2000); // Simulates model processing time
   };
 
+  // const simulateModelResponse = async () => {
+  //   try {
+  //     const formData = new FormData();
+  //     formData.append("image", file); // 'file' is the uploaded image file
+  
+  //     const response = await fetch("http://your-backend-url/api/predict", {
+  //       method: "POST",
+  //       body: formData,
+  //     });
+  
+  //     const data = await response.json();
+  //     setResult(data.result); // Replace default result with actual model prediction
+  //   } catch (error) {
+  //     console.error("Error processing image:", error);
+  //     setResult("An error occurred. Please try again.");
+  //   }
+  // };
+  
+
   return (
     <div style={styles.container}>
       <h2>Know Your Skin Type</h2>
