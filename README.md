@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Ayurvedicure – AI-Powered Personalized Ayurvedic Skincare System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+Precision Ayurvedic Skincare AI is designed to bring ancient Ayurvedic wisdom into the modern skincare space through artificial intelligence. While Ayurveda provides detailed principles on prakriti (constitution), vikruti (imbalances), and seasonal care, these insights often remain inaccessible or overly generalized for today’s users.
 
-## Available Scripts
+The system integrates a RAG-based chatbot (FAISS + Gemini embeddings) trained on 21 classical Ayurvedic texts and 2000+ curated articles, along with a ResNet50 skin-condition recognition model. Together, they deliver personalized prescriptions for issues like acne, dark spots, and wrinkles while adapting to user lifestyle, environmental conditions, and seasonal cycles—true to Ayurveda’s holistic approach.
 
-In the project directory, you can run:
+![Landing Page](/content/Landing_Page.png)
+![Questionnaire](/content/Questionnaire_Page.png)
+![Project Flow](/content/Project_Flow.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Model and Dataset
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+At the core of the system is a hybrid AI pipeline combining retrieval-based knowledge with machine learning diagnostics.
 
-### `npm test`
+- RAG Chatbot: Built on FAISS + Gemini embeddings, fine-tuned using 21 Ayurvedic books and 2000+ articles. It interprets user queries and generates prescriptions rooted in Ayurvedic formulations and principles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ResNet50 Skin-Type Model: Achieves 90% accuracy in classifying visible skin conditions such as acne, dark spots, and wrinkles.
 
-### `npm run build`
+- User Profiling Dataset: Incorporates questionnaire-based inputs (prakriti/vikruti), lifestyle patterns, and environmental factors for holistic diagnosis.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The dataset blends textual Ayurvedic knowledge, skin imaging data, and user feedback loops to refine recommendations over time.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Results and Evaluation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In benchmarking the system against existing skincare apps, the AI-driven Ayurvedic approach consistently showed higher personalization and interpretability:
 
-### `npm run eject`
+- Outperforms generic recommendation engines by combining dosha analysis, lifestyle data, and imaging.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Provides Ayurveda-grounded prescriptions—a feature absent in mainstream skincare apps.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Enables multilingual support and contextual reasoning through the RAG chatbot.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Feedback integration allows prescriptions to evolve, improving long-term skin outcomes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The ResNet50 diagnostic model achieved 90% accuracy on test datasets, while chatbot evaluation confirmed high relevance in Ayurvedic prescriptions compared to domain expert baseline
 
-## Learn More
+![Chatbot 1](/content/Chatbot.png)
+![Chatbot 2](/content/Chatbot2.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Future Outlook
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Looking ahead, the system aims to evolve into a full-fledged precision wellness ecosystem by integrating biomarker-based diagnostics, fine-grained skin imaging, and wearable health data for deeper personalization. A mobile-first deployment will make the platform widely accessible, while partnerships with Ayurvedic practitioners and product companies will help validate and scale its recommendations. These advancements will ensure the system continues to bridge ancient Ayurvedic principles with modern AI for truly individualized skincare.
